@@ -1,0 +1,380 @@
+/* ==================================
+   SEMESTERMATE V3 - GLOBAL STYLES
+================================== */
+
+:root{
+
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --text:#0f172a;
+    --secondary:#64748b;
+
+    --primary:#4f46e5;
+    --primary-hover:#4338ca;
+
+    --border:#e2e8f0;
+
+    --success:#10b981;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+/* ==================================
+   DARK MODE VARIABLES
+================================== */
+
+body.dark{
+
+    --bg:#0f172a;
+
+    --card:#1e293b;
+
+    --text:#f8fafc;
+
+    --secondary:#cbd5e1;
+
+    --border:#334155;
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,0.35);
+
+}
+
+/* ==================================
+   RESET
+================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    transition:.3s ease;
+
+}
+
+/* ==================================
+   LINKS
+================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+/* ==================================
+   INPUTS
+================================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    background:transparent;
+
+    color:var(--text);
+
+    font-size:.95rem;
+
+    margin-top:10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+}
+
+/* ==================================
+   GLASS CARD
+================================== */
+
+.glass{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+
+/* ==================================
+   COMMON CARD
+================================== */
+
+.card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==================================
+   SECTION
+================================== */
+
+section{
+
+    margin-bottom:40px;
+
+}
+
+/* ==================================
+   HEADINGS
+================================== */
+
+h1{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+}
+
+h3{
+
+    font-size:1.2rem;
+
+}
+
+p{
+
+    color:var(--secondary);
+
+    line-height:1.7;
+
+}
+
+/* ==================================
+   TOOL CARD
+================================== */
+
+.tool-card{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    margin-top:20px;
+
+}
+
+.tool-card button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+.tool-card button:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ==================================
+   RESULTS
+================================== */
+
+.result-box{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:
+    rgba(79,70,229,.08);
+
+}
+
+/* ==================================
+   PROGRESS BAR
+================================== */
+
+.progress-container{
+
+    width:100%;
+
+    height:20px;
+
+    background:#dbeafe;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    width:0%;
+
+    background:var(--primary);
+
+    transition:1s ease;
+
+}
+
+/* ==================================
+   SCROLLBAR
+================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:10px;
+
+}
+
+/* ==================================
+   ANIMATIONS
+================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .6s ease;
+
+}
