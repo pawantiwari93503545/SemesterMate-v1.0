@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SemesterMate | Study Smarter. Track Better.</title>
+
+<meta name="description"
+content="Attendance Calculator, CGPA Calculator, Pomodoro Timer, Notes and Student Tools">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        🎓 SemesterMate
+    </div>
+
+    <ul>
+
+        <li><a href="#dashboard">Dashboard</a></li>
+
+        <li><a href="#attendance">
+            Attendance
+        </a></li>
+
+        <li><a href="#cgpa">
+            CGPA
+        </a></li>
+
+        <li><a href="#percentage">
+            Percentage
+        </a></li>
+
+        <li><a href="#pomodoro">
+            Pomodoro
+        </a></li>
+
+        <li><a href="#countdown">
+            Countdown
+        </a></li>
+
+        <li>
+            <a href="pages/notes.html">
+                Notes
+            </a>
+        </li>
+
+        <li>
+            <a href="pages/blog.html">
+                Blog
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+<!-- Main Area -->
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <h1>
+            Study Smarter. Track Better.
+        </h1>
+
+        <button id="themeToggle">
+            🌙
+        </button>
+
+    </header>
+
+    <!-- Dashboard -->
+
+    <section id="dashboard">
+
+        <div class="hero-card">
+
+            <h2>
+                Welcome to SemesterMate
+            </h2>
+
+            <p>
+
+                Your all-in-one student toolkit for
+                attendance tracking, CGPA calculation,
+                productivity and study resources.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Quick Stats -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h3>📊</h3>
+            <p>Attendance</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>🎓</h3>
+            <p>CGPA</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>🍅</h3>
+            <p>Pomodoro</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>📚</h3>
+            <p>Notes</p>
+
+        </div>
+
+    </section>
+
+    <!-- Attendance -->
+
+    <section id="attendance">
+
+        <h2>
+            Attendance Predictor Pro
+        </h2>
+
+        <div class="tool-card">
+
+            <input
+            type="number"
+            id="totalClasses"
+            placeholder="Total Classes">
+
+            <input
+            type="number"
+            id="attendedClasses"
+            placeholder="Classes Attended">
+
+            <button onclick="attendancePredictor()">
+                Calculate
+            </button>
+
+            <div id="attendanceResult"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/theme.js"></script>
+<script src="js/attendance.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
